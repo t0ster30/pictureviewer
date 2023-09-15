@@ -58,5 +58,21 @@ namespace PictureViewerStepkin03ПРд4310
             else
                 pictureBox1.SizeMode = PictureBoxSizeMode.Normal;
         }
+
+        private void растянутьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+        }
+
+        private void нормаToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            pictureBox1.SizeMode = PictureBoxSizeMode.Normal;
+        }
+
+        private void оПрограммеToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AboutBox1 aboutBox = new AboutBox1();
+            aboutBox.Show();
+        }
     }
 }
